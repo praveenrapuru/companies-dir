@@ -11,7 +11,6 @@ export default function CompanyCard({ company }) {
 
       <div className="mt-3 flex items-center justify-between">
         <a href={company.website} target="_blank" rel="noreferrer" className="text-sm underline">Visit website</a>
-        <button className="px-3 py-1 rounded bg-gray-100 dark:bg-gray-700 text-sm">View</button>
       </div>
     </div>
   );

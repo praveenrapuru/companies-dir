@@ -22,7 +22,7 @@ export default function CompanyDirectory() {
       setLoading(true);
       setError(null);
       try {
-        const res = await fetch("/companies.json");
+        const res = await fetch("https://mocki.io/v1/62d84df6-0326-4d62-a367-385282fba568");
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
         if (!cancelled) setCompanies(data);
